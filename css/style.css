@@ -1,0 +1,331 @@
+/* @group Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @end */
+
+/* @group Global */
+
+body {
+	background: #ed9e1a;
+	color: #fff;
+	font: 14px/1.4 "Helvetica Neue", HelveticaNeue, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 93.75%; /* 300 / 320 = .9375 */
+	max-width: 940px;
+}
+
+.rounded {
+	border-radius: 3px;
+}
+
+.shadowy {
+	box-shadow: 0px 1px 1px rgba(0,0,0,.24);
+}
+
+.clear {
+	clear: both;
+}
+
+.small {
+	font-size: 11px;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* @end */
+
+/* @group Header */
+
+
+/* @end */
+
+/* @group Content */
+
+#main-content {
+	margin: 50px 0 0;
+}
+
+.icon {
+	display: block;
+	margin: 0 auto 24px;
+	width: 140px;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto 18px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: none;
+}
+
+.app-store-button {
+	display: block;
+	margin: 0 auto;
+	width: 160px;
+}
+
+.iphone {
+	display: block;
+	margin: 45px auto;
+	width: 68.75%; /* 220 / 320 = 0.6875 */
+	max-width: 299px;
+}
+
+/* @end */
+
+/* @group Footer */
+
+footer {
+	background: #33312f;
+	padding: 32px 0;
+}
+
+footer p {
+	color: #acacac;
+	color: rgba(255,255,255,.5);
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #ffffff;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 15px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+/* @end */
+
+/* @group Forms */
+
+
+/* @end */
+
+@media (min-width: 700px) {
+
+	#main-content {
+		float: left;
+		width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
+	}
+
+	aside {
+		float: right;
+		width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
+	}
+
+	.icon {
+		margin-top: 13vh; /* 150 / 860 = 0.17441860465116 */
+	}
+
+	h1{
+		font-size: 24px;
+	}
+
+
+	form {
+		display: block;
+		margin: 0 0 25px 13.04347826087%; /* 60 / 460 = 0.1304347826087 */
+		width: 100%;
+ 	}
+
+	input {
+		background: transparent;
+		border: 0;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		font-size: 18px;
+		padding: 16px 0;
+		margin-right: 4px;
+		width: 47.826086956522%; /* 220 / 460 = 0.47826086956522 */
+	}
+
+	button {
+		background: transparent;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		color: #fff;
+		padding: 16px 16px 15px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	button:active {
+		background: #fff;
+		color: #ed9e1a;
+	}
+
+	input:focus, button:focus {
+		outline: none
+	}
+
+	button:hover {
+		cursor: pointer;
+	}
+
+	::-webkit-input-placeholder {
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	:-ms-input-placeholder {  
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	.app-store-button {
+		margin-bottom: 4vh;
+	}
+
+	.iphone {
+		margin: 6vh auto 4vh; /* 100 / 860 = 0.11627906976744 | 75 / 860 = 0.08720930232558 */
+	}
+
+	footer nav {
+		float: right;
+	}
+
+	footer p {
+		float: left;
+		margin: 0;
+	}
+}
