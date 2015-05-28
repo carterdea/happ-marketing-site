@@ -24,7 +24,11 @@
 			<img src="images/logo.png" alt="Happ Logo" class="logo" />
 			<h1>Discover what's happening around you</h1>
 			 <div class="send-link-form">
-				 <p style="text-align: center">Coming soon to iOS</p>
+					<p style="text-align: center">Coming soon to iOS. Sign up to be notified when it's ready.</p>
+					<form action="http://happ1.createsend.com/t/i/s/juehl/" method="post" id="subForm">
+						<input id="fieldEmail" name="cm-juehl-juehl" type="email" placeholder="Email address" required />
+						<button type="submit">Sign Up</button>
+					</form>
 				<!-- <form>
 					<input type="text" placeholder="Phone Number or Email">
 					<button>Send Link</button>
@@ -52,6 +56,23 @@
 			<p>&copy; 2015 Happ Corporation</p>
 		</div><!--.container-->
 	</footer>
-
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+	<script type="text/javascript">
+	    $(function () {
+	        $('#subForm').submit(function (e) {
+	            e.preventDefault();
+	            $.getJSON(
+	            this.action + "?callback=?",
+	            $(this).serialize(),
+	            function (data) {
+	                if (data.Status === 400) {
+	                    alert("Error: " + data.Message);
+	                } else { // 200
+	                    alert("Success: " + data.Message);
+	                }
+	            });
+	        });
+	    });
+	</script>
 </body>
 </html>
