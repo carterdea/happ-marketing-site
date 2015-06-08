@@ -165,9 +165,71 @@ h1 {
 	font-size: 20px;
 }
 
-form {
+/*form { showing the form until we launch
 	display: none;
-}
+}*/
+
+	form {
+		display: block;
+		margin: 0 0 25px 13.04347826087%; /* 60 / 460 = 0.1304347826087 */
+		width: 100%;
+ 	}
+
+	input {
+		background: transparent;
+		border: 0;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		font-size: 18px;
+		padding: 16px 0;
+		margin-right: 4px;
+		width: 47.826086956522%; /* 220 / 460 = 0.47826086956522 */
+	}
+
+	button {
+		background: transparent;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		color: #fff;
+		padding: 16px 16px 15px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	button:active {
+		background: #fff;
+		color: #ed9e1a;
+	}
+
+	input:focus, button:focus {
+		outline: none
+	}
+
+	button:hover {
+		cursor: pointer;
+	}
+
+	::-webkit-input-placeholder {
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	:-ms-input-placeholder {  
+		color: #f7d6af;
+		color: rgba(255,255,255,.5);
+	}
+
+	/* Once we launch, delete everything above */
 
 .app-store-button {
 	display: block;
