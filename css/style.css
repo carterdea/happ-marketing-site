@@ -53,11 +53,25 @@ table {
 
 /* @group Global */
 
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body {
 	background: #ed9e1a;
 	color: #fff;
 	font: 16px/1.5 "Helvetica Neue", HelveticaNeue, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	min-height: 100%;
+	padding-bottom: 85px;
+	position: relative;
 }
 
 a {
@@ -271,7 +285,13 @@ ul {
 footer {
 	background: #33312f;
 	font-size: 14px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 85px;
 	padding: 32px 0;
+	width: 100%;
 }
 
 footer p {
