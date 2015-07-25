@@ -26,7 +26,16 @@
 			<img src="images/logo.png" alt="Happ Logo" class="logo" />
 			<h1>Discover what's happening around you</h1>
 			 <div class="send-link-form">
-					<p style="text-align: center">Coming soon to iOS. Sign up to be notified when it's ready.</p>
+				<p style="text-align: center">Coming soon to iOS. Sign up to be notified when it's ready.</p>
+				<!-- <form id="subForm">-->
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <!--<div style="position: absolute; left: -5000px;">
+				    	<input type="text" name="b_34edc573701900b580c8311ed_5ed0325364" tabindex="-1" value="">
+				    </div>
+				    <label for="mc-email"></label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mc-EMAIL" placeholder="Email address">
+				    <button type="submit">Sign Up</button>
+				</form> -->
 					<form action="http://happ1.createsend.com/t/i/s/juehl/" method="post" id="subForm">
 						<input id="fieldEmail" name="cm-juehl-juehl" type="email" placeholder="Email address" required />
 						<button type="submit">Sign Up</button>
@@ -58,7 +67,7 @@
 			<p>&copy; 2015 Happ Corporation</p>
 		</div><!--.container-->
 	</footer>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	    $(function () {
 	        $('#subForm').submit(function (e) {
@@ -68,15 +77,16 @@
 	            $(this).serialize(),
 	            function (data) {
 	                if (data.Status === 400) {
-	                    alert("Error: " + data.Message);
+	                    $('#subForm').prepend('<p>Uh oh! ' + data.Message + '</p>');
 	                } else { // 200
-	                    alert("Success: " + data.Message);
+	                    $('#fieldEmail').remove();
+						$('#subForm > button').remove();
+						$('#subForm').html('<p>Thanks so much for signing up!');
 	                }
 	            });
 	        });
 	    });
 	</script>
-	<!--<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>-->
 	<script type="js/retina.min.js"></script>
 </body>
 </html>
