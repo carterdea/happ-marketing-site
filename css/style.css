@@ -74,6 +74,10 @@ body {
 	position: relative;
 }
 
+body.home {
+	height: 100%;
+}
+
 a {
 	color: #fff;
 	text-decoration: none;
@@ -97,7 +101,6 @@ em {
 
 .container {
 	margin: 0 auto;
-	position: relative;
 	width: 93.75%; /* 300 / 320 = .9375 */
 	max-width: 940px;
 }
@@ -285,11 +288,9 @@ ul {
 footer {
 	background: #33312f;
 	font-size: 14px;
-	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	height: 85px;
 	padding: 32px 0;
 	width: 100%;
 }
@@ -337,7 +338,8 @@ h3 {
 }
 
 h4 {
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 /* @end */
@@ -347,7 +349,13 @@ h4 {
 
 /* @end */
 
-@media (min-width: 700px) {
+@media (min-width: 740px) { /* 740 to accomodate iPhone 6+ in landscape *facepalm* */
+
+	.centered {
+		position: relative;
+		top: 45%;
+		transform: translateY(-50%);
+	}
 
 	#main-content {
 		width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
@@ -371,7 +379,6 @@ h4 {
 	.home h1 {
 		font-size: 24px;
 	}
-
 
 	form {
 		display: block;
@@ -439,6 +446,10 @@ h4 {
 
 	.iphone {
 		margin: 6vh auto 4vh; /* 100 / 860 = 0.11627906976744 | 75 / 860 = 0.08720930232558 */
+	}
+
+	footer {
+		position: absolute;
 	}
 
 	footer nav {
