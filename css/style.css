@@ -1,6 +1,6 @@
 /* @group Reset */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -18,35 +18,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* @end */
@@ -54,71 +54,71 @@ table {
 /* @group Global */
 
 html {
-	box-sizing: border-box;
-	height: 100%;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	background: #ed9e1a;
-	color: #fff;
-	font: 16px/1.5 "Helvetica Neue", HelveticaNeue, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	min-height: 100%;
-	padding-bottom: 85px;
-	position: relative;
+  background: #ed9e1a;
+  color: #fff;
+  font: 16px/1.5 -apple-system, ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", HelveticaNeue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  padding-bottom: 85px;
+  position: relative;
 }
 
 body.home {
-	height: 100%;
+  height: 100%;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 p {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 em {
-	font-style: italic;
+  font-style: italic;
 }
 
 .container {
-	margin: 0 auto;
-	width: 93.75%; /* 300 / 320 = .9375 */
-	max-width: 940px;
+  margin: 0 auto;
+  width: 93.75%; /* 300 / 320 = .9375 */
+  max-width: 940px;
 }
 
 .rounded {
-	border-radius: 3px;
+  border-radius: 3px;
 }
 
 .shadowy {
-	box-shadow: 0px 1px 1px rgba(0,0,0,.24);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .24);
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .small {
-	font-size: 11px;
+  font-size: 11px;
 }
 
 /**
@@ -132,8 +132,8 @@ em {
  */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
@@ -150,125 +150,126 @@ em {
 /* @group Content */
 
 #main-content {
-	margin: 50px 0 0;
+  margin: 50px 0 0;
 }
 
 .icon {
-	display: block;
-	margin: 0 auto 24px;
-	width: 142px;
+  display: block;
+  margin: 0 auto 24px;
+  width: 142px;
 }
 
 .logo {
-	display: block;
-	margin: 0 auto 18px;
+  display: block;
+  margin: 0 auto 18px;
+  width: 81px;
 }
 
 h1 {
-	text-align: center;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .home h1 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 /*form { showing the form until we launch
-	display: none;
+  display: none;
 }*/
 
-	form {
-		display: block;
-		margin: 0 3% 25px;
- 	}
+form {
+  display: block;
+  margin: 0 3% 25px;
+}
 
-	input {
-		background: transparent;
-		border: 0;
-		border-bottom: 2px solid #fff;
-		color: #fff;
-		font-size: 18px;
-		padding: 16px 0;
-		margin-right: 4px;
-		width: 60%;
-	}
+  input {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px 0;
+    margin-right: 4px;
+    width: 60%;
+  }
 
-	button {
-		background: transparent;
-		border: 2px solid #fff;
-		border-radius: 4px;
-		color: #fff;
-		padding: 16px 16px 15px;
-		font-size: 18px;
-		font-weight: 500;
-	}
+  button {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 16px 15px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 
-	button:active {
-		background: #fff;
-		color: #ed9e1a;
-	}
+  button:active {
+    background: #fff;
+    color: #ed9e1a;
+  }
 
-	input:focus, button:focus {
-		outline: none
-	}
+  input:focus, button:focus {
+    outline: none
+  }
 
-	button:hover {
-		cursor: pointer;
-	}
+  button:hover {
+    cursor: pointer;
+  }
 
-	::-webkit-input-placeholder {
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  ::-webkit-input-placeholder {
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	:-moz-placeholder { /* Firefox 18- */
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  :-moz-placeholder { /* Firefox 18- */
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	::-moz-placeholder {  /* Firefox 19+ */
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	:-ms-input-placeholder {  
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  :-ms-input-placeholder {  
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	/* Once we launch, delete everything above */
+  /* Once we launch, delete everything above */
 
 .app-store-button {
-	display: block;
-	margin: 0 auto;
-	width: 160px;
+  display: block;
+  margin: 0 auto;
+  width: 160px;
 }
 
 .iphone {
-	display: block;
-	margin: 45px auto;
-	width: 68.75%; /* 220 / 320 = 0.6875 */
-	max-width: 299px;
+  display: block;
+  margin: 45px auto;
+  width: 68.75%; /* 220 / 320 = 0.6875 */
+  max-width: 299px;
 }
 
 .meta-data {
-	font-size: 13px;
-	margin-bottom: 35px;
+  font-size: 13px;
+  margin-bottom: 35px;
 }
 
 article {
-	border-bottom: 1px solid #f2bb5f;
-	margin-bottom: 50px
+  border-bottom: 1px solid #f2bb5f;
+  margin-bottom: 50px
 }
 
 article img {
-	display: block;
-	margin: 0 auto 32px;
+  display: block;
+  margin: 0 auto 32px;
 }
 
 ul {
-	list-style-type: disc;
-	margin-bottom: 15px;
+  list-style-type: disc;
+  margin-bottom: 15px;
 }
 
 /* @end */
@@ -276,31 +277,31 @@ ul {
 /* @group Footer */
 
 footer {
-	background: #33312f;
-	font-size: 14px;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 32px 0;
-	width: 100%;
+  background: #33312f;
+  font-size: 14px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 32px 0;
+  width: 100%;
 }
 
 footer p {
-	color: #acacac;
-	color: rgba(255,255,255,.5);
-	margin: 20px 0 0;
-	text-align: center;
+  color: #acacac;
+  color: rgba(255,255,255,.5);
+  margin: 20px 0 0;
+  text-align: center;
 }
 
 footer nav ul {
-	margin-bottom: 0
+  margin-bottom: 0
 }
 
 nav li {
-	list-style-type: none;
-	display: inline-block;
-	margin-left: 20px;
-	text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  text-align: center;
 }
 
 /* @end */
@@ -308,28 +309,28 @@ nav li {
 /* @group Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	color: #ffffff;
-	font-weight: normal;
+  color: #ffffff;
+  font-weight: normal;
 }
 
 h1 {
-	font-size: 36px;
+  font-size: 36px;
 }
 
 h2 {
-	font-size: 24px;
-	margin-bottom: 24px;
-	text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 h3 {
-	font-size: 18px;
-	margin-bottom: 6px;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 h4 {
-	font-size: 16px;
-	font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* @end */
@@ -340,124 +341,124 @@ h4 {
 /* @end */
 
 @media (min-width: 480px) {
-	#subForm {
-		margin: 0 15% 25px;
-	}
+  #subForm {
+    margin: 0 15% 25px;
+  }
 
-	input {
-		width: 66%;
-	}
+  input {
+    width: 66%;
+  }
 }
 
 @media (min-width: 740px) { /* 740 to accomodate iPhone 6+ in landscape *facepalm* */
 
-	.centered {
-		position: relative;
-		top: 48%;
-		transform: translateY(-50%);
-	}
+  .centered {
+    position: relative;
+    top: 48%;
+    transform: translateY(-50%);
+  }
 
-	#main-content {
-		width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
-		margin: 0 auto;
-	}
+  #main-content {
+    width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
+    margin: 0 auto;
+  }
 
-	.home #main-content {
-		float: left;
-		margin: 0;
-	}
+  .home #main-content {
+    float: left;
+    margin: 0;
+  }
 
-	.home aside {
-		float: right;
-		width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
-	}
+  .home aside {
+    float: right;
+    width: 48.936170212766%; /* 460 / 940 = 0.48936170212766 */
+  }
 
-	.icon {
-		margin-top: 13vh; /* 150 / 860 = 0.17441860465116 */
-	}
+  .icon {
+    margin-top: 13vh; /* 150 / 860 = 0.17441860465116 */
+  }
 
-	.home h1 {
-		font-size: 24px;
-	}
+  .home h1 {
+    font-size: 24px;
+  }
 
-	form {
-		display: block;
-		margin: 0  13.04347826087% 25px; /* 60 / 460 = 0.1304347826087 */
-		width: 75%;
- 	}
+  form {
+    display: block;
+    margin: 0  13.04347826087% 25px; /* 60 / 460 = 0.1304347826087 */
+    width: 75%;
+  }
 
-	input {
-		background: transparent;
-		border: 0;
-		border-bottom: 2px solid #fff;
-		color: #fff;
-		font-size: 18px;
-		padding: 16px 0;
-		margin-right: 4px;
-		width: 56.826087%; /* 220 / 460 = 0.47826086956522 */
-	}
+  input {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px 0;
+    margin-right: 4px;
+    width: 56.826087%; /* 220 / 460 = 0.47826086956522 */
+  }
 
-	button {
-		background: transparent;
-		border: 2px solid #fff;
-		border-radius: 4px;
-		color: #fff;
-		padding: 16px 16px 15px;
-		font-size: 18px;
-		font-weight: 500;
-	}
+  button {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 16px 15px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 
-	button:active {
-		background: #fff;
-		color: #ed9e1a;
-	}
+  button:active {
+    background: #fff;
+    color: #ed9e1a;
+  }
 
-	input:focus, button:focus {
-		outline: none
-	}
+  input:focus, button:focus {
+    outline: none
+  }
 
-	button:hover {
-		cursor: pointer;
-	}
+  button:hover {
+    cursor: pointer;
+  }
 
-	::-webkit-input-placeholder {
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  ::-webkit-input-placeholder {
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	:-moz-placeholder { /* Firefox 18- */
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  :-moz-placeholder { /* Firefox 18- */
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	::-moz-placeholder {  /* Firefox 19+ */
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	:-ms-input-placeholder {  
-		color: #f7d6af;
-		color: rgba(255,255,255,.5);
-	}
+  :-ms-input-placeholder {  
+    color: #f7d6af;
+    color: rgba(255,255,255,.5);
+  }
 
-	.app-store-button {
-		margin-bottom: 4vh;
-	}
+  .app-store-button {
+    margin-bottom: 4vh;
+  }
 
-	.iphone {
-		margin: 6vh auto 4vh; /* 100 / 860 = 0.11627906976744 | 75 / 860 = 0.08720930232558 */
-	}
+  .iphone {
+    margin: 6vh auto 4vh; /* 100 / 860 = 0.11627906976744 | 75 / 860 = 0.08720930232558 */
+  }
 
-	footer {
-		position: absolute;
-	}
+  footer {
+    position: absolute;
+  }
 
-	footer nav {
-		float: right;
-	}
+  footer nav {
+    float: right;
+  }
 
-	footer p {
-		float: left;
-		margin: 0;
-	}
+  footer p {
+    float: left;
+    margin: 0;
+  }
 }
