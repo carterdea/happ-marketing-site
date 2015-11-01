@@ -456,6 +456,11 @@ h4 {
 		float: right;
 	}
 
+	footer a.heap {
+		float: right;
+		margin: -10px 0 -15px 20px;
+	}
+
 	footer p {
 		float: left;
 		margin: 0;
