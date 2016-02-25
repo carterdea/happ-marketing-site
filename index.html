@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Happ &bull; The Social Map</title>
+	<title>Happ &bull; Discover the world around you.</title>
 	<meta name="description" content="Happ, the Social Map. Use Happ to discover what's happening around you and chat with people all around the world.">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/prefixfree.min.js"></script>
@@ -14,28 +14,13 @@
 	<![endif]-->
 </head>
 <body class="home">
-	<!-- <header role="banner">
-		<div class="masthead">
-			<a href="#">Happ</a>
-		</div>
-	</header> -->
-	
 	<div class="container cf centered">
 		<section id="main-content" role="main">
-			<img src="images/icon@2x.png" alt="Happ iPhone App Icon" class="icon" />
-			<img src="images/logo@2x.png" alt="Happ Logo" class="logo" />
+			<img src="images/icon.png" alt="Happ iPhone App Icon" class="icon" />
+			<img src="images/logo.png" alt="Happ Logo" class="logo" />
 			<h1>Discover what's happening around you</h1>
 			 <div class="send-link-form">
 				<p style="text-align: center">Coming soon to iOS. Sign up to be notified when it's ready.</p>
-				<!-- <form id="subForm">-->
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <!--<div style="position: absolute; left: -5000px;">
-				    	<input type="text" name="b_34edc573701900b580c8311ed_5ed0325364" tabindex="-1" value="">
-				    </div>
-				    <label for="mc-email"></label>
-					<input type="email" value="" name="EMAIL" class="required email" id="mc-EMAIL" placeholder="Email address">
-				    <button type="submit">Sign Up</button>
-				</form> -->
 					<form action="https://happ1.createsend.com/t/i/s/juehl/" method="post" id="subForm">
 						<input id="fieldEmail" name="cm-juehl-juehl" type="email" placeholder="Email address" required />
 						<button type="submit">Sign Up</button>
@@ -44,11 +29,21 @@
 					<input type="text" placeholder="Phone Number or Email">
 					<button>Send Link</button>
 				</form> -->
+				<!-- <form id="subForm" class="linkTextingWidget">
+				  <div class="linkTextingInner">
+				    <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+				    <input type="hidden" class="linkID" value="c639f95c-876a-439b-84ae-5510303eccca">
+				    <div class="linkTextingInputWrapper">
+			        <input class="linkTextingInput" type="tel" id="numberToText_linkTexting" />
+			        <button class="linkTextingButton" type="button" id="sendButton_linkTexting">Text Me A Link</button>
+				    </div>
+				  </div>
+				</form> -->
 			</div><!--.send-link-form -->
 			<!-- <a href="#" class="app-store-button"><img src="images/app-store-button.png" alt="Download on the App Store" /></a> -->
 		</section>
 		<aside id="sidebar">
-			 <img src="images/iphone@2x.png" alt="See what's happening around you on the Happ iPhone App on an iPhone 6" class="iphone" />
+			 <img src="images/iphone.png" alt="See what's happening around you on the Happ iPhone App on an iPhone 6" class="iphone" />
 		</aside>
 	</div><!--.container-->
 	<footer class="cf">
@@ -62,12 +57,13 @@
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Help</a></li> -->
+					<li><a href="rules">Rules</a></li>
 					<li><a href="privacy">Privacy</a></li>
-					<!-- <li><a href="terms.html">Terms</a></li> -->
+					<li><a href="terms">Terms</a></li>
 					<li><a href="mailto:hello@gethapp.io">Contact</a></li>
 				</ul>
 			</nav>
-			<p>&copy; 2015 Happ Corporation</p>
+			<p>&copy; 2016 Happ Corporation</p>
 		</div><!--.container-->
 	</footer>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
@@ -80,7 +76,7 @@
 	            $(this).serialize(),
 	            function (data) {
 	                if (data.Status === 400) {
-	                    $('#subForm').prepend('<p>Uh oh! ' + data.Message + '</p>');
+	                    $('#subForm').prepend('<p class="error">Uh oh! ' + data.Message + '</p>');
 	                } else { // 200
 	                    $('#fieldEmail').remove();
 						$('#subForm > button').remove();
@@ -90,6 +86,16 @@
 	        });
 	    });
 	</script>
-	<script type="js/retina.min.js"></script>
+	<script type="text/javascript">
+  /* All Country data is lowercase ISO2 standard http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 */
+  /* Default Country, if set to "auto" will determine the visiting user's country via their location */
+  var linkTextingDefaultCountry = "us";
+  /* If using automatic country detection with https or over 1,000 visits/day go to http://ipinfo.io, get a token, and place it here */
+  var linkTextingIpinfoToken = "";
+  /* Preferred Countries in Dropdown */
+  var linkTextingPreferredCountries = ["us", "ca"];
+  var linkTextingOnlyCountries = ["us", "ca"];
+</script>
+<script type="text/javascript" src="http://d3q6uu7asevdsg.cloudfront.net/1.4/js/link_texting.min.js"></script>
 </body>
 </html>
