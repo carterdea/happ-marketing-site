@@ -174,12 +174,8 @@ h1 {
   font-size: 20px;
 }
 
-/*form { showing the form until we launch
-  display: none;
-}*/
-
 form {
-  display: block;
+  display: none;
   margin: 0 3% 25px;
 }
 
@@ -385,10 +381,10 @@ h4 {
     font-size: 24px;
   }
 
-  form {
+  #subForm {
     display: block;
-    margin: 0  13.04347826087% 25px; /* 60 / 460 = 0.1304347826087 */
-    width: 75%;
+    margin: 0 0 25px 8%; /* 60 / 460 = 0.1304347826087 */
+    width: 100%;
   }
 
   input {
@@ -400,7 +396,7 @@ h4 {
     padding: 16px 0;
     margin-right: 4px;
     width: 56.826087%; /* 220 / 460 = 0.47826086956522 */
-    /* width: 42.826087%; /* for link texting */
+     width: 42.826087%; /* for link texting 
   }
 
   button {
